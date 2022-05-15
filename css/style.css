@@ -160,7 +160,7 @@ header {
   min-height: 70px;
   background-color: #fff;
   box-shadow: 0 0 3px rgb(0 0 0 / 0.2);
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 222;
 }
@@ -338,7 +338,7 @@ header .container nav > .links li > a:hover::before {
   padding-top: var(--main-padding-top);
   position: relative;
   z-index: 1;
-  height: calc(100vh - 70px);
+  height: calc(100vh);
 }
 .landing:after {
   content: "";
@@ -398,6 +398,7 @@ header .container nav > .links li > a:hover::before {
 .landing .container .image img {
   width: 600px;
   animation: moving 5s linear infinite;
+  margin-top: 50px;
 }
 .landing > a i {
   color: var(--main-color);
